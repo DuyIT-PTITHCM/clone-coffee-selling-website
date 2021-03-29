@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {
+            packages: ['corechart', 'line']
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container header-block">
+            <div class="header__left">
+                <h3 class="header-left__logo">
+                    GAC NHO COFFE
+                </h3>
+                <!-- end logo  -->
+            </div>
+            <!-- end left  -->
+            <div class="header__right">
+                <img src="img/sexy.jpg" alt="" class="header-right__avatar">
+                <!-- end header-right avatar  -->
+            </div>
+            <!-- header__right -->
+            <!-- end right  -->
+        </div>
+        <!-- end container  -->
+    </div>
+    <!-- end header  -->
+
+    <div class="admin">
+        <div class="admin-block">
+            <div class="admin__menu">
+                <ul class="admin-menu__list">
+                    <li class="admin-menu__item ">
+                        <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/admin.html" class="admin-menu__detail active">
+                        Thống kê thu nhập chưa phí
+                    </a>
+                    </li>
+                    <!-- end item  -->
+                    <li class="admin-menu__item ">
+                        <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/manageronline.html" class="admin-menu__detail">
+                        Quản lý mua hàng online
+                    </a>
+                    </li>
+                    <!-- end item  -->
+                    <li class="admin-menu__item">
+                        <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/admin.html" class="admin-menu__detail">
+                        Thống kê lương nhân viên
+                    </a>
+                    </li>
+                    <!-- end item  -->
+                    <li class="admin-menu__item">
+                        <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/admin.html" class="admin-menu__detail">
+                        Thống kê nguyên liệu nhập
+                    </a>
+                    </li>
+                    <!-- end item  -->
+                    <li class="admin-menu__item">
+                        <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/admin.html" class="admin-menu__detail">
+                        Thống kê chi phí khác 
+                    </a>
+                    </li>
+                    <!-- end item  -->
+                    <li class="admin-menu__item">
+                        <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/admin.html" class="admin-menu__detail">
+                        Thống kê lãi ròng
+                    </a>
+                    </li>
+                    <!-- end item  -->
+                    <li class="admin-menu__item">
+                        <a href="" class="admin-menu__detail admin-menu__detail--after">
+                        Quản lý sản phẩm 
+                    </a>
+                        <ul class="admin-menu-item__sub">
+                            <li class="admin-menu-item__sub-item">
+                                <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/mproduct.html" class="admin-menu-item__sub-detail">
+                                Show all
+                            </a>
+                            </li>
+                            <!-- end item sub  -->
+                            <li class="admin-menu-item__sub-item">
+                                <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/adminadd.html" class="admin-menu-item__sub-detail">
+                                Thêm sản phẩm
+                            </a>
+                            </li>
+                            <!-- end item sub  -->
+                        </ul>
+                    </li>
+                    <!-- end item  -->
+                    <li class="admin-menu__item">
+                        <a href="" class="admin-menu__detail admin-menu__detail--after">
+                        Quản lý bàn
+                    </a>
+                        <ul class="admin-menu-item__sub">
+                            <li class="admin-menu-item__sub-item">
+                                <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/table.html" class="admin-menu-item__sub-detail">
+                                Show all
+                            </a>
+                            </li>
+                            <!-- end item sub  -->
+                            <li class="admin-menu-item__sub-item">
+                                <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/addtable.html" class="admin-menu-item__sub-detail">
+                                Thêm bàn
+                            </a>
+                            </li>
+                            <li class="admin-menu-item__sub-item">
+                                <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/tablestatus.html" class="admin-menu-item__sub-detail">
+                                Xem Tình Trạng Bàn
+                            </a>
+                            </li>
+                            <!-- end item sub  -->
+                        </ul>
+                    </li>
+                    <!-- end item  -->
+
+                    <li class="admin-menu__item">
+                        <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/address.html" class="admin-menu__detail admin-menu__detail--after">
+                        Quản lý địa chỉ
+                    </a>
+                        <ul class="admin-menu-item__sub">
+                            <li class="admin-menu-item__sub-item">
+                                <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/address.html" class="admin-menu-item__sub-detail">
+                                Show all
+                            </a>
+                            </li>
+                            <!-- end item sub  -->
+                            <li class="admin-menu-item__sub-item">
+                                <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/addaddress.html" class="admin-menu-item__sub-detail">
+                                Thêm địa chỉ
+                            </a>
+                            </li>
+                            <!-- end item sub  -->
+                        </ul>
+                    </li>
+                    <!-- end item  -->
+                    <li class="admin-menu__item">
+                        <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/discount.html" class="admin-menu__detail admin-menu__detail--after">
+                        Quản lý giảm giá
+                    </a>
+                        <ul class="admin-menu-item__sub">
+                            <li class="admin-menu-item__sub-item">
+                                <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/discount.html" class="admin-menu-item__sub-detail">
+                                Show all
+                            </a>
+                            </li>
+                            <!-- end item sub  -->
+                            <li class="admin-menu-item__sub-item">
+                                <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/adddiscount.html" class="admin-menu-item__sub-detail">
+                                Thêm giảm giá
+                            </a>
+                            </li>
+                            <!-- end item sub  -->
+                        </ul>
+                    </li>
+                    <!-- end item  -->
+                    <li class="admin-menu__item">
+                        <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/imagepr.html" class="admin-menu__detail admin-menu__detail">
+                        Quản lý PR
+                    </a>
+                    </li>
+                    <!-- end item  -->
+                    <li class="admin-menu__item">
+                        <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/metarial.html" class="admin-menu__detail admin-menu__detail--after">
+                        Quản lý nguyên liệu
+                    </a>
+                        <ul class="admin-menu-item__sub">
+                            <li class="admin-menu-item__sub-item">
+                                <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/metarial.html" class="admin-menu-item__sub-detail">
+                                Show all
+                            </a>
+                            </li>
+                            <!-- end item sub  -->
+                            <li class="admin-menu-item__sub-item">
+                                <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/addmatarial.html" class="admin-menu-item__sub-detail">
+                                Thêm nguyên liệu
+                            </a>
+                            </li>
+                            <!-- end item sub  -->
+                        </ul>
+                    </li>
+                    <!-- end item  -->
+                    <li class="admin-menu__item">
+                        <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/memploy.html" class="admin-menu__detail admin-menu__detail--after">
+                        Quản lý tuyển dụng
+                    </a>
+                        <ul class="admin-menu-item__sub">
+                            <li class="admin-menu-item__sub-item">
+                                <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/memploy.html" class="admin-menu-item__sub-detail">
+                                Show all bai đăng tuyển dụng
+                            </a>
+                            </li>
+                            <!-- end item sub  -->
+                            <li class="admin-menu-item__sub-item">
+                                <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/addemploy.html" class="admin-menu-item__sub-detail">
+                                Thêm bài tuyển dụng
+                            </a>
+                            </li>
+                            <!-- end item sub  -->
+                            <li class="admin-menu-item__sub-item">
+                                <a href="file:///C:/Users/Administrator/Desktop/%C4%90%E1%BB%92%20%C3%81N%20WEBCAFE/FE/addemployee.html" class="admin-menu-item__sub-detail">
+                                Thêm nhân viên
+                            </a>
+                            </li>
+                            <!-- end item sub  -->
+                            <li class="admin-menu-item__sub-item">
+                                <a href="" class="admin-menu-item__sub-detail">
+                                Tính lương nhân viên 
+                            </a>
+                            </li>
+                            <!-- end item sub  -->
+                        </ul>
+                    </li>
+                    <!-- end item  -->
+                </ul>
+                <!-- end list  -->
+            </div>
+            <!-- end admin menu  -->
+            <div class="admin__right">
+                <div class="admin-right__top">
+                    <table>
+                        <tr>
+                            <th>Thang</th>
+                            <th>Thu Nhap</th>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>100.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>100.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>100.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>100.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>100.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>100.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>100.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>100.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>100.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>100.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>100.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>100.000.000</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <!-- end admin left  -->
+                <div class="admin-right__chart">
+                    <div id="container" style="width: 550px; height: 400px; margin: 0 auto">
+                    </div>
+                </div>
+
+
+
+                <!-- end code block for products  -->
+
+            </div>
+            <!-- end admin right  -->
+        </div>
+    </div>
+    <!-- end block main  -->
+
+    <script language="JavaScript">
+        function drawChart() {
+            // Define the chart to be drawn.
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Month');
+            data.addColumn('number', 'Tokyo');
+            data.addColumn('number', 'New York');
+            data.addColumn('number', 'Berlin');
+            data.addColumn('number', 'London');
+            data.addRows([
+                ['Jan', 7.0, -0.2, -0.9, 3.9],
+                ['Feb', 6.9, 0.8, 0.6, 4.2],
+                ['Mar', 9.5, 5.7, 3.5, 5.7],
+                ['Apr', 14.5, 11.3, 8.4, 8.5],
+                ['May', 18.2, 17.0, 13.5, 11.9],
+                ['Jun', 21.5, 22.0, 17.0, 15.2],
+
+                ['Jul', 25.2, 24.8, 18.6, 17.0],
+                ['Aug', 26.5, 24.1, 17.9, 16.6],
+                ['Sep', 23.3, 20.1, 14.3, 14.2],
+                ['Oct', 18.3, 14.1, 9.0, 10.3],
+                ['Nov', 13.9, 8.6, 3.9, 6.6],
+                ['Dec', 9.6, 2.5, 1.0, 4.8]
+            ]);
+
+            // Set chart options
+            var options = {
+                chart: {
+                    title: 'Average Temperatures of Cities',
+                    subtitle: 'Source: worldclimate.com'
+                },
+                hAxis: {
+                    title: 'Month',
+                },
+                vAxis: {
+                    title: 'Temperature',
+                },
+                'width': 550,
+                'height': 400
+            };
+
+            // Instantiate and draw the chart.
+            var chart = new google.charts.Line(document.getElementById('container'));
+            chart.draw(data, options);
+        }
+        google.charts.setOnLoadCallback(drawChart);
+    </script>
+</body>
+
+</html>

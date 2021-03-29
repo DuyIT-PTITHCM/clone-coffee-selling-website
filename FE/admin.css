@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none !important;
+  display: block; }
+
+ul {
+  list-style: none !important; }
+
+.container {
+  width: 1200px !important;
+  margin: 0 auto; }
+
+.header {
+  width: 100%;
+  height: 40px;
+  background: #435c70;
+  position: fixed;
+  top: 0%;
+  left: 0; }
+
+.header-block {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
+  .header-block .header__left {
+    width: 90%; }
+    .header-block .header__left h3.header-left__logo {
+      color: #fcfafa;
+      font-family: sans-serif;
+      margin-top: 10px; }
+  .header-block .header__right {
+    width: 5%; }
+    .header-block .header__right .header-right__avatar {
+      text-align: right;
+      width: 100%;
+      height: 40px;
+      border-radius: 50%; }
+
+.admin {
+  font-family: sans-serif;
+  width: 100%;
+  margin-top: 60px;
+  position: fixed;
+  height: 500px;
+  overflow-y: auto; }
+  .admin .admin-block {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    .admin .admin-block .admin__menu {
+      width: 25%;
+      background-color: #838383;
+      box-shadow: 1px 4px 5px 1px #969494; }
+      .admin .admin-block .admin__menu .admin-menu__list {
+        width: 100%; }
+        .admin .admin-block .admin__menu .admin-menu__list .admin-menu__item {
+          padding: 15px 0 15px 15px;
+          width: 93%;
+          cursor: pointer;
+          border-bottom: 1px #807e7e solid; }
+          .admin .admin-block .admin__menu .admin-menu__list .admin-menu__item:hover a.admin-menu__detail--after::after {
+            transform: rotate(0); }
+          .admin .admin-block .admin__menu .admin-menu__list .admin-menu__item .admin-menu-item__sub {
+            display: block;
+            padding: 20px;
+            left: -200px; }
+            .admin .admin-block .admin__menu .admin-menu__list .admin-menu__item .admin-menu-item__sub .admin-menu-item__sub-item {
+              padding: 10px 0;
+              border-bottom: 1px gray solid;
+              transition: 1s; }
+              .admin .admin-block .admin__menu .admin-menu__list .admin-menu__item .admin-menu-item__sub .admin-menu-item__sub-item:hover {
+                background: #c0aaaa; }
+          .admin .admin-block .admin__menu .admin-menu__list .admin-menu__item .admin-menu__detail {
+            color: white !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+          .admin .admin-block .admin__menu .admin-menu__list .admin-menu__item .admin-menu__detail.active {
+            color: #07f530 !important;
+            font-style: italic; }
+          .admin .admin-block .admin__menu .admin-menu__list .admin-menu__item .admin-menu__detail {
+            color: black;
+            font-weight: 600; }
+          .admin .admin-block .admin__menu .admin-menu__list .admin-menu__item .admin-menu__detail--after {
+            color: black; }
+            .admin .admin-block .admin__menu .admin-menu__list .admin-menu__item .admin-menu__detail--after::after {
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              content: "\f107";
+              position: absolute;
+              margin-left: 240px;
+              margin-top: -15px;
+              cursor: pointer;
+              display: block;
+              transform: rotate(180deg);
+              font-size: 25px;
+              transition: 1s; }
+          .admin .admin-block .admin__menu .admin-menu__list .admin-menu__item .admin-menu-item__sub-detail {
+            color: white; }
+    .admin .admin-block .admin__right {
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      width: 70%; }
+      .admin .admin-block .admin__right .admin-right__top {
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 200px; }
+        .admin .admin-block .admin__right .admin-right__top table,
+        .admin .admin-block .admin__right .admin-right__top td,
+        .admin .admin-block .admin__right .admin-right__top th {
+          border: 1px solid #ddd;
+          text-align: left; }
+        .admin .admin-block .admin__right .admin-right__top table {
+          border-collapse: collapse;
+          width: 100%; }
+        .admin .admin-block .admin__right .admin-right__top th,
+        .admin .admin-block .admin__right .admin-right__top td {
+          padding: 15px; }
+      .admin .admin-block .admin__right .admin-rigth__product {
+        width: 100%;
+        height: 40px;
+        border-bottom: 1px gray solid;
+        padding: 10px 0; }
+        .admin .admin-block .admin__right .admin-rigth__product .admin-right-product__item {
+          width: 100%;
+          display: flex;
+          justify-content: space-between; }
+          .admin .admin-block .admin__right .admin-rigth__product .admin-right-product__item .product-item__detail-img,
+          .admin .admin-block .admin__right .admin-rigth__product .admin-right-product__item .product-item__detail-name,
+          .admin .admin-block .admin__right .admin-rigth__product .admin-right-product__item .product-item__detail-price {
+            width: 27%; }
+          .admin .admin-block .admin__right .admin-rigth__product .admin-right-product__item .product-item__detail-edit,
+          .admin .admin-block .admin__right .admin-rigth__product .admin-right-product__item .product-item__detail-delete {
+            width: 5%;
+            cursor: pointer; }
+          .admin .admin-block .admin__right .admin-rigth__product .admin-right-product__item .product-item__detail-img .product-item__img {
+            width: 50%;
+            height: 50px;
+            margin-top: -5px;
+            object-fit: cover; }
+
+.admin__right .admin-right__table {
+  width: 90%;
+  margin: 20px auto;
+  border-bottom: 1px gray solid;
+  padding: 5px 0; }
+  .admin__right .admin-right__table .admin-righth__table-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .admin__right .admin-right__table .admin-righth__table-item .admin-right__table-name {
+      width: 85%; }
+    .admin__right .admin-right__table .admin-righth__table-item .admin-right__table-edit,
+    .admin__right .admin-right__table .admin-righth__table-item .admin-right__table-delete {
+      width: 5%; }
+
+.admin__right .list-status-table {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .admin__right .list-status-table .list-status-table__item {
+    width: 23%;
+    height: 100px;
+    background: #e25818;
+    margin: 10px auto;
+    text-align: center;
+    color: #fcfafa;
+    font-size: 40px;
+    line-height: 90px;
+    cursor: pointer;
+    border-radius: 50px; }
+  .admin__right .list-status-table .list-status-table__item.order {
+    background: green; }
+  .admin__right .list-status-table .list-status-table__item.active {
+    background: yellow; }
+
+.admin__right ul {
+  list-style: none;
+  display: flex; }
+.admin__right .masonry {
+  width: 100%;
+  margin: 0 auto;
+  columns: 4;
+  column-gap: 16px; }
+  @media (max-width: 1200px) {
+    .admin__right .masonry {
+      columns: 3; } }
+  @media (max-width: 992px) {
+    .admin__right .masonry {
+      columns: 2; } }
+  .admin__right .masonry .grid {
+    display: inline-block;
+    margin-bottom: 16px;
+    position: relative; }
+    .admin__right .masonry .grid:before {
+      border-radius: 5px;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.2); }
+    .admin__right .masonry .grid img {
+      width: 100%;
+      border-radius: 5px; }
+    .admin__right .masonry .grid__body {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      padding: 30px 30px;
+      color: #fff;
+      display: flex;
+      flex-direction: column; }
+      .admin__right .masonry .grid__body:hover .bg, .admin__right .masonry .grid__body:hover .sub {
+        visibility: visible; }
+      .admin__right .masonry .grid__body .bg {
+        transition: 1s;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 30px 30px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        background: red;
+        opacity: 0.5;
+        visibility: hidden; }
+      .admin__right .masonry .grid__body .sub {
+        visibility: hidden;
+        z-index: 999;
+        position: absolute;
+        width: 100%; }
+        .admin__right .masonry .grid__body .sub__item {
+          margin-top: auto;
+          width: 30%;
+          cursor: pointer; }
+          .admin__right .masonry .grid__body .sub__item:hover i {
+            font-size: 50px; }
+          .admin__right .masonry .grid__body .sub__item i {
+            transition: 0.5s;
+            font-size: 40px;
+            transition-timing-function: ease; }
+.admin__right .mt-auto {
+  margin-top: auto; }
+.admin__right .insert-img {
+  width: 100%;
+  margin: 50px auto;
+  border: 1px gray solid;
+  padding: 10px;
+  box-shadow: 1px 2px 5px 1px gray;
+  color: white;
+  background: orange; }
+  .admin__right .insert-img .form-add {
+    width: 100%; }
+    .admin__right .insert-img .form-add__title {
+      font-weight: 700; }
+    .admin__right .insert-img .form-add__upload-file {
+      width: 100%; }
+
+.admin__right {
+  margin-top: 20px; }
+  .admin__right .list-adress {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px #cccbcb solid; }
+    .admin__right .list-adress___item-detail {
+      width: 85%; }
+    .admin__right .list-adress__item {
+      width: 5%; }
+
+.admin__right .matarial-block {
+  margin-top: 30px; }
+  .admin__right .matarial-block .matarial {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 0.5px #a7a3a3 solid; }
+    .admin__right .matarial-block .matarial__name {
+      width: 20%; }
+    .admin__right .matarial-block .matarial__date {
+      width: 10%; }
+    .admin__right .matarial-block .matarial__content {
+      width: 40%; }
+    .admin__right .matarial-block .matarial__total-money {
+      width: 10%; }
+    .admin__right .matarial-block .matarial__edit, .admin__right .matarial-block .matarial__dalete {
+      width: 5%; }
+
+.admin__right .admin-discount {
+  padding: 15px 0;
+  border-bottom: 1px gray solid; }
+  .admin__right .admin-discount__item {
+    width: 100%;
+    display: flex; }
+    .admin__right .admin-discount__item .admin-discount__content {
+      width: 40%; }
+    .admin__right .admin-discount__item .admin-discount__percent {
+      width: 20%; }
+    .admin__right .admin-discount__item .admin-discount__date-start,
+    .admin__right .admin-discount__item .admin-discount__date-end {
+      width: 20%; }
+    .admin__right .admin-discount__item .admin-discount__date-edit,
+    .admin__right .admin-discount__item .admin-discount__date-delete {
+      cursor: pointer;
+      width: 5%; }
+
+.admin__right {
+  margin: 30px 0; }
+  .admin__right .employ {
+    padding: 15px 0;
+    border-bottom: 1px #5b5b5f solid; }
+    .admin__right .employ-item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      .admin__right .employ-item__title {
+        width: 35%; }
+      .admin__right .employ-item__content {
+        width: 50%; }
+      .admin__right .employ-item__edit, .admin__right .employ-item__delete {
+        width: 5%; }
+
+body {
+  background: #4e657a; }
+
+.admin__right .manager-online {
+  padding: 15px 0;
+  border-bottom: 1px gray solid; }
+  .admin__right .manager-online .user-order {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white; }
+    .admin__right .manager-online .user-order__name, .admin__right .manager-online .user-order__phone, .admin__right .manager-online .user-order__status, .admin__right .manager-online .user-order__detail {
+      width: 17%; }
+    .admin__right .manager-online .user-order__address {
+      width: 30%; }
+    .admin__right .manager-online .user-order__detail .user-order__show-all {
+      color: white;
+      background: orange;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px; }
+
+/*# sourceMappingURL=admin.css.map */

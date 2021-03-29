@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none !important;
+  display: block; }
+
+ul {
+  list-style: none !important; }
+
+.margin-20 {
+  padding-top: 20px; }
+
+.applicant {
+  width: 100%; }
+  .applicant .aplicant-block {
+    width: 1200px;
+    margin: 50px auto; }
+    .applicant .aplicant-block .custom {
+      width: 100%;
+      font-size: 15px;
+      color: white;
+      font-weight: bold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: green;
+      text-align: center;
+      height: 40px;
+      padding: 0 !important;
+      line-height: 5px; }
+    .applicant .aplicant-block .applicant__item {
+      padding: 15px 0;
+      border-bottom: 1px gray solid; }
+      .applicant .aplicant-block .applicant__item .applicant-detail {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        .applicant .aplicant-block .applicant__item .applicant-detail .applicant-detail__img {
+          width: 15%; }
+          .applicant .aplicant-block .applicant__item .applicant-detail .applicant-detail__img img {
+            width: 80%;
+            height: 100px; }
+        .applicant .aplicant-block .applicant__item .applicant-detail .applicant-detail__name {
+          width: 15%;
+          margin-top: 20px; }
+
+/*# sourceMappingURL=aplicant.css.map */

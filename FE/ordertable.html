@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="ordertable.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.min.css">
+
+    <script src="/scripts/snippet-javascript-console.min.js?v=1"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container header-block">
+            <div class="header__left">
+                <h3 class="header-left__logo">
+                    GAC NHO COFFE
+                </h3>
+                <!-- end logo  -->
+            </div>
+            <!-- end left  -->
+            <div class="header__right">
+                <img src="img/sexy.jpg" alt="" class="header-right__avatar">
+                <!-- end header-right avatar  -->
+            </div>
+            <!-- header__right -->
+            <!-- end right  -->
+        </div>
+        <!-- end container  -->
+    </div>
+    <!-- end header  -->
+
+    <div id="modal-id" uk-modal class="popup">
+        <div class="uk-modal-dialog popup__box">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="popup__top">
+                <img src="img/51.jpg" alt="" class="popup__product">
+                <div class="popup__right">
+                    <h3 class="popup__name">CÀ PHÊ SỮA ĐÁ</h3>
+                    <p class="popup__size">S</p>
+                </div>
+            </div>
+            <!-- end popup top  -->
+            <div class="popup__check">
+                <div class="popup__size-item">
+                    <input type="checkbox"> <span> S</span>
+                </div>
+                <div class="popup__size-item">
+                    <input type="checkbox"> <span> M</span>
+                </div>
+                <div class="popup__size-item">
+                    <input type="checkbox"> <span> L</span>
+                </div>
+            </div>
+            <!-- end popup mid  -->
+            <div class="popup__end">
+                <div class="popup-end__left">
+                    <p class="popup-end__sub popup-end__item">_</p>
+                    <p class="popup-end__mid popup-end__item">1</p>
+                    <p class="popup-end__right popup-end__item">+</p>
+                </div>
+                <!-- end popup left end  -->
+                <a href="" class="btn btn-add-to-cart">
+                    THÊM VÀO GIỎ HÀNG
+                </a>
+                <!-- end popup right  -->
+            </div>
+            <!-- end popup end  -->
+        </div>
+    </div>
+    <div class="block-products">
+        <div class="block-products__menu">
+            <ul class="block-products-menu__list">
+                <li class="block-products-menu-list__item">
+                    <a href="#">NỔI BẬT</a>
+                </li>
+                <li class="block-products-menu-list__item">
+                    <a href="#">CÀ PHÊ SỮA ĐÁ</a>
+                </li>
+                <li class="block-products-menu-list__item">
+                    <a href="#">CÀ PHÊ ĐEN ĐÁ</a>
+                </li>
+                <li class="block-products-menu-list__item">
+                    <a href="#">NƯỚC NGỌT</a>
+                </li>
+                <li class="block-products-menu-list__item">
+                    <a href="#">THUỐC LÁ</a>
+                </li>
+                <li class="block-products-menu-list__item">
+                    <a href="#">NƯỚC ÉP</a>
+                </li>
+                <li class="block-products-menu-list__item">
+                    <a href="#">COKTAIL</a>
+                </li>
+                <li class="block-products-menu-list__item">
+                    <a href="#">NỔI BẬT</a>
+                </li>
+                <li class="block-products-menu-list__item">
+                    <a href="#">CÀ PHÊ SỮA ĐÁ</a>
+                </li>
+                <li class="block-products-menu-list__item">
+                    <a href="#">CÀ PHÊ ĐEN ĐÁ</a>
+                </li>
+                <li class="block-products-menu-list__item">
+                    <a href="#">NƯỚC NGỌT</a>
+                </li>
+                <li class="block-products-menu-list__item">
+                    <a href="#">THUỐC LÁ</a>
+                </li>
+                <li class="block-products-menu-list__item">
+                    <a href="#">NƯỚC ÉP</a>
+                </li>
+                <li class="block-products-menu-list__item">
+                    <a href="#">COKTAIL</a>
+                </li>
+            </ul>
+        </div>
+        <!-- end menu  -->
+        <div class="block-products__list">
+            <div class="search">
+                <input type="text" class="block-products__search " placeholder="Tìm kiếm sản phẩm">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <h3 class="block-products__title">
+                NỔI BẬT
+            </h3>
+            <ul class="block-products__items">
+                <li class="block-products__item">
+                    <img src="img/59.jpg" alt="" class="block-products__img-left">
+                    <ul class="block-products__right">
+                        <li class="block-products__name">
+                            HỘP QUÀ TẾT 2021
+                        </li>
+                        <li class="block-products__description">
+                            Cà phê phin kết hợp cũng sữa đặc là một sáng tạo đầy tự hào của người Việt, được xem món uống thương hiệu của Việt Nam.
+                        </li>
+                        <li class="block-products__price">
+                            <span class="price-only">
+                                60.000 USD
+                            </span>
+                            <a id='open-modal' uk-toggle="target: #modal-id" href="#">
+                                <i class="fas fa-plus-circle add"></i>
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="block-products__item">
+                    <img src="img/50.jpg" alt="" class="block-products__img-left">
+                    <ul class="block-products__right">
+                        <li class="block-products__name">
+                            HỘP QUÀ TẾT 2021
+                        </li>
+                        <li class="block-products__description">
+                            Cà phê phin kết hợp cũng sữa đặc là một sáng tạo đầy tự hào của người Việt, được xem món uống thương hiệu của Việt Nam.
+                        </li>
+                        <li class="block-products__price">
+                            <span class="price-only">
+                                60.000 USD
+                            </span>
+                            <a id='open-modal' uk-toggle="target: #modal-id" href="#">
+                                <i class="fas fa-plus-circle add"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="block-products__item">
+                    <img src="img/51.jpg" alt="" class="block-products__img-left">
+                    <ul class="block-products__right">
+                        <li class="block-products__name">
+                            HỘP QUÀ TẾT 2021
+                        </li>
+                        <li class="block-products__description">
+                            Cà phê phin kết hợp cũng sữa đặc là một sáng tạo đầy tự hào của người Việt, được xem món uống thương hiệu của Việt Nam.
+                        </li>
+                        <li class="block-products__price">
+                            <span class="price-only">
+                                60.000 USD
+                            </span>
+                            <a id='open-modal' uk-toggle="target: #modal-id" href="#">
+                                <i class="fas fa-plus-circle add"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="block-products__item">
+                    <img src="img/52.jpg" alt="" class="block-products__img-left">
+                    <ul class="block-products__right">
+                        <li class="block-products__name">
+                            HỘP QUÀ TẾT 2021
+                        </li>
+                        <li class="block-products__description">
+                            Cà phê phin kết hợp cũng sữa đặc là một sáng tạo đầy tự hào của người Việt, được xem món uống thương hiệu của Việt Nam.
+                        </li>
+                        <li class="block-products__price">
+                            <span class="price-only">
+                                60.000 USD
+                            </span>
+                            <a id='open-modal' uk-toggle="target: #modal-id" href="#">
+                                <i class="fas fa-plus-circle add"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="block-products__item">
+                    <img src="img/53.jpg" alt="" class="block-products__img-left">
+                    <ul class="block-products__right">
+                        <li class="block-products__name">
+                            HỘP QUÀ TẾT 2021
+                        </li>
+                        <li class="block-products__description">
+                            Cà phê phin kết hợp cũng sữa đặc là một sáng tạo đầy tự hào của người Việt, được xem món uống thương hiệu của Việt Nam.
+                        </li>
+                        <li class="block-products__price">
+                            <span class="price-only">
+                                60.000 USD
+                            </span>
+                            <a id='open-modal' uk-toggle="target: #modal-id" href="#">
+                                <i class="fas fa-plus-circle add"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="block-products__item">
+                    <img src="img/54.jpg" alt="" class="block-products__img-left">
+                    <ul class="block-products__right">
+                        <li class="block-products__name">
+                            HỘP QUÀ TẾT 2021
+                        </li>
+                        <li class="block-products__description">
+                            Cà phê phin kết hợp cũng sữa đặc là một sáng tạo đầy tự hào của người Việt, được xem món uống thương hiệu của Việt Nam.
+                        </li>
+                        <li class="block-products__price">
+                            <span class="price-only">
+                                60.000 USD
+                            </span>
+                            <a id='open-modal' uk-toggle="target: #modal-id" href="#">
+                                <i class="fas fa-plus-circle add"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="block-products__item">
+                    <img src="img/55.jpg" alt="" class="block-products__img-left">
+                    <ul class="block-products__right">
+                        <li class="block-products__name">
+                            HỘP QUÀ TẾT 2021
+                        </li>
+                        <li class="block-products__description">
+                            Cà phê phin kết hợp cũng sữa đặc là một sáng tạo đầy tự hào của người Việt, được xem món uống thương hiệu của Việt Nam.
+                        </li>
+                        <li class="block-products__price">
+                            <span class="price-only">
+                                60.000 USD
+                            </span>
+                            <a id='open-modal' uk-toggle="target: #modal-id" href="#">
+                                <i class="fas fa-plus-circle add"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="block-products__item">
+                    <img src="img/56.jpg" alt="" class="block-products__img-left">
+                    <ul class="block-products__right">
+                        <li class="block-products__name">
+                            HỘP QUÀ TẾT 2021
+                        </li>
+                        <li class="block-products__description">
+                            Cà phê phin kết hợp cũng sữa đặc là một sáng tạo đầy tự hào của người Việt, được xem món uống thương hiệu của Việt Nam.
+                        </li>
+                        <li class="block-products__price">
+                            <span class="price-only">
+                                60.000 USD
+                            </span>
+                            <a id='open-modal' uk-toggle="target: #modal-id" href="#">
+                                <i class="fas fa-plus-circle add"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="block-products__item">
+                    <img src="img/57.jpg" alt="" class="block-products__img-left">
+                    <ul class="block-products__right">
+                        <li class="block-products__name">
+                            HỘP QUÀ TẾT 2021
+                        </li>
+                        <li class="block-products__description">
+                            Cà phê phin kết hợp cũng sữa đặc là một sáng tạo đầy tự hào của người Việt, được xem món uống thương hiệu của Việt Nam.
+                        </li>
+                        <li class="block-products__price">
+                            <span class="price-only">
+                                60.000 USD
+                            </span>
+                            <a id='open-modal' uk-toggle="target: #modal-id" href="#">
+                                <i class="fas fa-plus-circle add"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="block-products__item">
+                    <img src="img/58.jpg" alt="" class="block-products__img-left">
+                    <ul class="block-products__right">
+                        <li class="block-products__name">
+                            HỘP QUÀ TẾT 2021
+                        </li>
+                        <li class="block-products__description">
+                            Cà phê phin kết hợp cũng sữa đặc là một sáng tạo đầy tự hào của người Việt, được xem món uống thương hiệu của Việt Nam.
+                        </li>
+                        <li class="block-products__price">
+                            <span class="price-only">
+                                60.000 USD
+                            </span>
+                            <a id='open-modal' uk-toggle="target: #modal-id" href="#">
+                                <i class="fas fa-plus-circle add"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+        <!-- end mid  -->
+        <div class="block-products__cart">
+            <div class="block-products__btn">
+                XEM GIỎ HÀNG
+            </div>
+            <div class="block-products__handler">
+                <ul class="block-products-cart__list">
+                    <li class="block-products-cart__item">
+                        <span class="block-products-cart__count">1</span>
+                        <ul class="block-products-cart__mid">
+                            <li class="block-products-cart__name">
+                                CÀ PHÊ SỮA ĐÁ
+                            </li>
+                            <li class="block-products-cart__size">
+                                S
+                            </li>
+                        </ul>
+                        <span class="block-products-cart__price">
+                                35.000 Đ
+                        </span>
+                        <a href="" class="delete-icon">
+                            <i class="fas fa-trash table-delete"></i>
+                        </a>
+                    </li>
+                    <li class="block-products-cart__item">
+                        <span class="block-products-cart__count">1</span>
+                        <ul class="block-products-cart__mid">
+                            <li class="block-products-cart__name">
+                                CÀ PHÊ SỮA ĐÁ
+                            </li>
+                            <li class="block-products-cart__size">
+                                S
+                            </li>
+                        </ul>
+                        <span class="block-products-cart__price">
+                                35.000 Đ
+                        </span>
+                        <a href="" class="delete-icon">
+                            <i class="fas fa-trash table-delete"></i>
+                        </a>
+                    </li>
+                    <li class="block-products-cart__item">
+                        <span class="block-products-cart__count">1</span>
+                        <ul class="block-products-cart__mid">
+                            <li class="block-products-cart__name">
+                                CÀ PHÊ SỮA ĐÁ
+                            </li>
+                            <li class="block-products-cart__size">
+                                S
+                            </li>
+                        </ul>
+                        <span class="block-products-cart__price">
+                                35.000 Đ
+                        </span>
+                        <a href="" class="delete-icon">
+                            <i class="fas fa-trash table-delete"></i>
+                        </a>
+                    </li>
+                    <li class="block-products-cart__item">
+                        <span class="block-products-cart__count">1</span>
+                        <ul class="block-products-cart__mid">
+                            <li class="block-products-cart__name">
+                                CÀ PHÊ SỮA ĐÁ
+                            </li>
+                            <li class="block-products-cart__size">
+                                S
+                            </li>
+                        </ul>
+                        <span class="block-products-cart__price">
+                                35.000 Đ
+                        </span>
+                        <a href="" class="delete-icon">
+                            <i class="fas fa-trash table-delete"></i>
+                        </a>
+                    </li>
+                    <li class="block-products-cart__item">
+                        <span class="block-products-cart__count">1</span>
+                        <ul class="block-products-cart__mid">
+                            <li class="block-products-cart__name">
+                                CÀ PHÊ SỮA ĐÁ
+                            </li>
+                            <li class="block-products-cart__size">
+                                S
+                            </li>
+                        </ul>
+                        <span class="block-products-cart__price">
+                                35.000 Đ
+                        </span>
+                        <a href="" class="delete-icon">
+                            <i class="fas fa-trash table-delete"></i>
+                        </a>
+                    </li>
+                    <li class="block-products-cart__item">
+                        <span class="block-products-cart__count">1</span>
+                        <ul class="block-products-cart__mid">
+                            <li class="block-products-cart__name">
+                                CÀ PHÊ SỮA ĐÁ
+                            </li>
+                            <li class="block-products-cart__size">
+                                S
+                            </li>
+                        </ul>
+                        <span class="block-products-cart__price">
+                                35.000 Đ
+                        </span>
+                        <a href="" class="delete-icon">
+                            <i class="fas fa-trash table-delete"></i>
+                        </a>
+                    </li>
+                    <li class="block-products-cart__item">
+                        <span class="block-products-cart__count">1</span>
+                        <ul class="block-products-cart__mid">
+                            <li class="block-products-cart__name">
+                                CÀ PHÊ SỮA ĐÁ
+                            </li>
+                            <li class="block-products-cart__size">
+                                S
+                            </li>
+                        </ul>
+                        <span class="block-products-cart__price">
+                                35.000 Đ
+                        </span>
+                        <a href="" class="delete-icon">
+                            <i class="fas fa-trash table-delete"></i>
+                        </a>
+                    </li>
+                    <li class="block-products-cart__item">
+                        <span class="block-products-cart__count">1</span>
+                        <ul class="block-products-cart__mid">
+                            <li class="block-products-cart__name">
+                                CÀ PHÊ SỮA ĐÁ
+                            </li>
+                            <li class="block-products-cart__size">
+                                S
+                            </li>
+                        </ul>
+                        <span class="block-products-cart__price">
+                                35.000 Đ
+                        </span>
+                        <a href="" class="delete-icon">
+                            <i class="fas fa-trash table-delete"></i>
+                        </a>
+                    </li>
+                    <li class="block-products-cart__item">
+                        <span class="block-products-cart__count">1</span>
+                        <ul class="block-products-cart__mid">
+                            <li class="block-products-cart__name">
+                                CÀ PHÊ SỮA ĐÁ
+                            </li>
+                            <li class="block-products-cart__size">
+                                S
+                            </li>
+                        </ul>
+                        <span class="block-products-cart__price">
+                                35.000 Đ
+                        </span>
+                        <a href="" class="delete-icon">
+                            <i class="fas fa-trash table-delete"></i>
+                        </a>
+                    </li>
+                    <div class="block-products__btn">
+                        <a href="file:///C:/Users/Administrator/Desktop/FE/addressbyonline.html">
+                            TIẾN HÀNH ĐẶT HÀNG
+                        </a>
+
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

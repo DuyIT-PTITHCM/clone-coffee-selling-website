@@ -1,0 +1,55 @@
+body,
+html {
+  width: 100%;
+  height: 100%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+input {
+  outline: none; }
+
+.add {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #4e657a; }
+  .add .add-box {
+    width: 60%;
+    margin: 30px auto;
+    padding: 30px;
+    background: #435c70;
+    box-shadow: 1px 2px 5px 0 gray;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    .add .add-box .add__title {
+      padding-bottom: 30px; }
+    .add .add-box .add-box__form .add-box__form-detail .add-box__name-input,
+    .add .add-box .add-box__form .add-box__form-detail .add-box__price-detail,
+    .add .add-box .add-box__form .add-box__form-detail .add-box__category,
+    .add .add-box .add-box__form .add-box__form-detail .add-box__date-detail,
+    .add .add-box .add-box__form .add-box__form-detail .add-box__category-input,
+    .add .add-box .add-box__form .add-box__form-detail .add-box__ip-detail,
+    .add .add-box .add-box__form .add-box__form-detail .btn-submit {
+      width: 100%;
+      height: 30px;
+      margin: 10px 0;
+      padding-left: 20px;
+      outline: none; }
+    .add .add-box .add-box__form .add-box__form-detail .add-box__category-input {
+      height: 100px; }
+    .add .add-box .add-box__form .add-box__form-detail .add-box__category,
+    .add .add-box .add-box__form .add-box__form-detail .btn-submit {
+      width: 100%; }
+    .add .add-box .add-box__form .add-box__form-detail .btn-submit {
+      color: white;
+      background: orange;
+      height: 40px;
+      font-weight: 900;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 1px 2px 3px 0 gray;
+      font-size: 25px; }
+
+/*# sourceMappingURL=adminadd.css.map */
